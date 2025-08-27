@@ -17,18 +17,18 @@
 # Criar pessoa
 
 ```bash
-  curl -X POST http://localhost:8000/pessoas -H 'Content-Type: application/json' -d '{"nome":"João Silva","cpf":"123.456.789-00","data_nascimento":"1990-05-20"}'
+  curl -X POST http://localhost/pessoas -H 'Content-Type: application/json' -d '{"nome":"João Silva","cpf":"123.456.789-00","data_nascimento":"1990-05-20"}'
 ```
 
 # Editar com versão conhecida (ex: 1)
 
 ```bash
- curl -X PATCH http://localhost:8000/pessoas/1 -H 'Content-Type: application/json' -d '{"version":1, "nome":"João A. Silva"}'
+ curl -X PATCH http://localhost/pessoas/1 -H 'Content-Type: application/json' -d '{"version":1, "nome":"João A. Silva"}'
 ```
 
 # Listar
 
-  curl http://localhost:8000/pessoas
+  curl http://localhost/pessoas
 
 Observações arquiteturais:
 
